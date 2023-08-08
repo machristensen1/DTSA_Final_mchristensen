@@ -20,7 +20,7 @@ import altair as alt
 import warnings
 warnings.filterwarnings('ignore')
 
-df = pd.read_csv("SHLS.csv", encoding="ANSI")
+df = pd.read_csv("SHLS.csv")
 df['Sleep Disorder'] = df['Sleep Disorder'].fillna('None')
 df['BMI Category'] = df['BMI Category'].replace('Normal Weight', 'Underweight')
 df = df.drop(['Blood Pressure'], axis = 1)
